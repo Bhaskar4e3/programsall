@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+body{background-color:#654321}
+*{color:red;font-size:30px}
+</style>
+<script>
+function pg(){
+document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mm").value)*100
+var percentage=document.getElementById("perc").value
+window.alert(percentage)
+document.getElementById("gr").value=""
+var g;
+switch(Math.floor(percentage/10)){
+case 9: g="super";
+         break;
+case 8: g="excellent"
+         break;
+case 7: g="good";
+         break;
+case 6: g="pass"
+         break;
+case 5: g="fail";
+         break;
+}
+ document.getElementById("gr").value=g
+}
+</script>
+</head>
+<body>
+maximum marks =<input type="text" id="mm"/><br><br>
+maximum marks =<input type="text" id="om"/><br><br>
+<button type="button" onclick="pg()">verify</button><br><br>
+percentage =<input type="text" id="perc"/><br><br>
+Grade =<input type="text" id="gr"/><br><br>
+</body>
+</html>

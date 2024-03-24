@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="abc.js">
+
+
+</script>
+<style>
+#display{background-color:orange;color:red;font-size:40;text-align:center;
+   border:dashed;border-size:5;border-color:blue;margin:0% 15% 10% 0%;
+padding-left:25%}
+</style>
+</head>
+<body>
+<script>
+function display(){
+ document.getElementById("display").innerHTML="welcome to css,html and java script course  head tag || head tag"
+}
+
+function displayOld(){
+document.getElementById("display").innerHTML="welcome to css and html  body tag || body tag"
+}
+</script>
+<h1 id="display">welcome to css and html course</h1>
+<button type="button" onclick="display()">change content function</button>
+<button type="button" onclick="displayOld()">get old content</button>
+<button type="button" onclick="displayext()">get new content</button>
+</body>
+</html>

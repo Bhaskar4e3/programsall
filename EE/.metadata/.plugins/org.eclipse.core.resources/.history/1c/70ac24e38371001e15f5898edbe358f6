@@ -1,0 +1,10 @@
+package java8;
+import java.util.*;
+public class Sort {
+	public static void main(String[] args) {
+		Map<Char,Integer> list=new HashMap<>();
+		list.Put('a',3);
+		
+	}
+
+}

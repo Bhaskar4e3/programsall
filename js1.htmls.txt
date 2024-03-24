@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+function add()
+{
+    var a,b
+    a=20
+    b=30
+
+    return a+b
+}
+document.write("sum of a and b is",add())
+</script>
+</body>
+</html>

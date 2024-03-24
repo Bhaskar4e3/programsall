@@ -1,0 +1,23 @@
+package java8;
+
+public class Test1 {
+	
+	public static void main(String[] a) {
+		String s="my name is bhaskar";
+		String revString ="";
+		for(int i=0;i<=s.length()-1;i++) {
+			char ch=s.charAt(i);
+			revString=ch+revString;
+		
+			
+		}
+		System.out.println(revString);
+			
+				
+			}
+			
+			
+		}
+	
+
+

@@ -1,0 +1,31 @@
+package java8;
+
+public class Test1 {
+	
+	public static void main(String[] a) {
+		String s="my name is bhaskar";
+		String revString ="";
+		String revEachWord="";
+		for(int i=0;i<=s.length()-1;i++) {
+			char ch=s.charAt(i);
+			revString=revString+ch;
+			if(ch==' ') {
+				for(int j=revString.length()-1;j<=0;j--) {
+					revEachWord=revEachWord+revString.charAt(j);
+					continue;
+				}
+			}
+		
+			
+		}
+		//System.out.println(revString);
+		
+		System.out.println(revEachWord);
+				
+			}
+			
+			
+		}
+	
+
+

@@ -1,0 +1,14 @@
+package java8;
+import java.util.*;
+public class Sort {
+	public static void main(String[] args) {
+		Map<Character,Integer> list=new HashMap<>();
+		list.put('a',3);
+		list.put('b',5);
+		list.put('c',4);
+		list.put('d',1);
+		System.out.println(list);
+		
+	}
+
+}

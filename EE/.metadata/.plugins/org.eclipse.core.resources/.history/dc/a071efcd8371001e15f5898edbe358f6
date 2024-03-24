@@ -1,0 +1,8 @@
+package java8;
+import java.util.*;
+public class Sort {
+	public static void main(String[] args) {
+		Map<String,Integer> list=new HashMap<>();
+	}
+
+}

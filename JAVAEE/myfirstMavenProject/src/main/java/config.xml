@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+    <bean name="cus" class="com.bk.myfirstMavenProject.Customer">
+    
+     <constructor-arg value="bhaskar" index="0"/>
+     <constructor-arg index="1"><value>9999</value></constructor-arg>
+      <constructor-arg index="2">
+         <props>
+         <prop key="home">anantapur</prop>
+          <prop key="ofc1">hyderabad</prop>
+           <prop key="ofc2">bangalore</prop>
+         </props>
+     </constructor-arg>
+     
+        
+   </bean>
+        <bean name="ord" class="com.bk.myfirstMavenProject.Order">
+           <constructor-arg><value>apple</value></constructor-arg>
+           <constructor-arg value="p123"/>
+           <constructor-arg><value>4000</value></constructor-arg>
+           <constructor-arg ref="cus"/>
+        
+        </bean>
+   
+ 
+
+
+</beans>
